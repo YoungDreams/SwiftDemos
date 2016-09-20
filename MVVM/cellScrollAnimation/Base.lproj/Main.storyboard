@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pY6-SL-iHd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="test" id="BYZ-38-t0r" customClass="ViewController" customModule="cellScrollAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="205" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lbl-41-wu5" customClass="TestTableView" customModule="cellScrollAnimation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="763"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="dwT-LP-10N">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dwT-LP-10N" id="Wwg-XP-xUY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view tag="2000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-TD-sMI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="299"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Ea-jS-iJV">
+                                                            <rect key="frame" x="0.0" y="86" width="414" height="128"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="400" id="AkH-7c-jqD"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="7Ea-jS-iJV" firstAttribute="centerY" secondItem="L8k-TD-sMI" secondAttribute="centerY" id="9pV-qO-tOC"/>
+                                                        <constraint firstItem="7Ea-jS-iJV" firstAttribute="leading" secondItem="L8k-TD-sMI" secondAttribute="leading" id="ayE-dS-1NL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7Ea-jS-iJV" secondAttribute="trailing" id="pUn-AB-YJB"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="L8k-TD-sMI" firstAttribute="leading" secondItem="Wwg-XP-xUY" secondAttribute="leadingMargin" constant="-8" id="7vc-5v-h8A"/>
+                                                <constraint firstItem="L8k-TD-sMI" firstAttribute="top" secondItem="Wwg-XP-xUY" secondAttribute="topMargin" constant="-8" id="LCf-as-YFb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="L8k-TD-sMI" secondAttribute="bottom" constant="-8" id="cb2-Vu-R5k"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="L8k-TD-sMI" secondAttribute="trailing" constant="-8" id="p4o-me-BQa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8fD-wT-LJq">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="KsB-UY-9Hm" customClass="TestBarItem" customModule="cellScrollAnimation" customModuleProvider="target"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="barItem" destination="KsB-UY-9Hm" id="Skh-rN-hB5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="293"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ajq-IO-xfX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pY6-SL-iHd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gf9-tL-4kc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tFI-6a-bBJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcJ-p5-uJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a.jpg" width="572" height="836"/>
+    </resources>
+</document>
