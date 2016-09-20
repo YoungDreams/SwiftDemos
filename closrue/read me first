@@ -1,0 +1,9 @@
+/*
+简单的闭包传值  
+第一个界面 有lable 和 button  
+第二个界面 有textField 和两个 button
+目的是将 第二个界面的textField 中的text 使用闭包传给 第一个界面的lable.text
+控件都是xib 文件。自己拖一拖
+代码中有步骤
+跟着步骤走 吃喝啥都有
+*/
