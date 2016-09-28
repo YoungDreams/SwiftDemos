@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="headViewBiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Gm-8h-j46">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mon-qg-vL1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="线稿3 原图.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pKc-h2-aVd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40952705540000001" green="1" blue="0.4078754195" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76622797818791943" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mon-qg-vL1" firstAttribute="leading" secondItem="4Gm-8h-j46" secondAttribute="leading" id="2Ho-7K-xxg"/>
+                                    <constraint firstItem="mon-qg-vL1" firstAttribute="centerY" secondItem="4Gm-8h-j46" secondAttribute="centerY" id="PpQ-Mx-Nly"/>
+                                    <constraint firstAttribute="bottom" secondItem="mon-qg-vL1" secondAttribute="bottom" id="dtC-XG-ySx"/>
+                                    <constraint firstAttribute="trailing" secondItem="mon-qg-vL1" secondAttribute="trailing" id="niU-2d-QyP"/>
+                                    <constraint firstItem="mon-qg-vL1" firstAttribute="centerX" secondItem="4Gm-8h-j46" secondAttribute="centerX" id="si6-QF-o0c"/>
+                                    <constraint firstItem="mon-qg-vL1" firstAttribute="top" secondItem="4Gm-8h-j46" secondAttribute="top" id="u4n-8n-Qbx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="j8G-ue-Hco"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Gm-8h-j46" secondAttribute="trailing" id="KPE-mm-Sfq"/>
+                            <constraint firstItem="4Gm-8h-j46" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XcJ-2V-4Q7"/>
+                            <constraint firstItem="4Gm-8h-j46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fx7-fT-mBx"/>
+                            <constraint firstItem="4Gm-8h-j46" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oja-jA-usy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="img" destination="pKc-h2-aVd" id="zXa-Py-hcJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="线稿3 原图.jpg" width="500" height="500"/>
+    </resources>
+</document>
